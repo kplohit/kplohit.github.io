@@ -1,25 +1,36 @@
 body {
-  font-family: sans-serif;
+  font-family: Arial, sans-serif;
   text-align: center;
-  background: #f9f9f9;
+  background: #f4f4f4;
 }
-.controls {
-  margin: 20px;
+
+.controls, .nav-buttons {
+  margin: 10px;
 }
-#numberContainer {
+
+#arrayContainer {
   display: flex;
+  align-items: flex-end;
   justify-content: center;
-  gap: 10px;
-  margin-top: 40px;
+  height: 320px;
+  margin: 20px auto;
+  border: 1px solid #ccc;
+  background: white;
+  padding: 10px;
 }
-.number {
-  padding: 10px 15px;
-  background: #007acc;
-  color: white;
-  border-radius: 5px;
-  font-size: 18px;
-  transition: background 0.3s;
+
+.bar {
+  width: 15px;
+  margin: 0 1px;
+  background: steelblue;
+  transition: height 0.2s;
 }
-.number.active {
-  background: orange;
+
+.bar.active {
+  background: tomato;
+}
+
+button, select {
+  padding: 5px 10px;
+  font-size: 14px;
 }
