@@ -6,19 +6,17 @@
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <div class="sidebar">
-    <label for="sortType">Choose Sort:</label>
+  <div class="controls">
     <select id="sortType">
       <option value="bubble">Bubble Sort</option>
       <option value="selection">Selection Sort</option>
       <option value="insertion">Insertion Sort</option>
-      <option value="merge">Merge Sort</option>
-      <option value="quick">Quick Sort</option>
     </select>
-    <button onclick="startSort()">Start</button>
+    <button onclick="generateArray()">Reset</button>
+    <button onclick="prevStep()">⏮ Prev</button>
+    <button onclick="nextStep()">⏭ Next</button>
   </div>
-  <div class="container" id="arrayContainer"></div>
-
+  <div id="numberContainer"></div>
   <script src="sort.js"></script>
 </body>
 </html>
