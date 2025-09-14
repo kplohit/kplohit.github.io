@@ -1,0 +1,28 @@
+body {
+  font-family: sans-serif;
+  display: flex;
+  margin: 0;
+  background: #f0f0f0;
+}
+.sidebar {
+  padding: 20px;
+  background: #333;
+  color: white;
+  min-width: 200px;
+}
+.container {
+  flex: 1;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  height: 90vh;
+}
+.bar {
+  width: 20px;
+  margin: 2px;
+  background-color: teal;
+  transition: height 0.3s ease;
+}
+.bar.active {
+  background-color: orange;
+}
